@@ -319,9 +319,9 @@ const sidebarLeftData = {
 // This is sample data.
 const sidebarRightData = {
   user: {
-    name: "shadcn",
+    name: "spaceflight",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/avatars/spaceflight.jpg",
   },
   calendars: [
     {

@@ -1,10 +1,8 @@
 # Contributing
 
-Thanks for your interest in contributing to ui.shadcn.com. We're happy to have you here.
+Thanks for your interest in contributing to ui.spaceflight.dev. We're happy to have you here.
 
 Please take a moment to review this document before submitting your first pull request. We also strongly recommend that you check for open issues and pull requests to see if someone else is working on something similar.
-
-If you need any help, feel free to reach out to [@shadcn](https://twitter.com/shadcn).
 
 ## About this repository
 
@@ -41,7 +39,7 @@ packages
 | `apps/www/components` | The React components for the website.    |
 | `apps/www/content`    | The content for the website.             |
 | `apps/www/registry`   | The registry for the components.         |
-| `packages/cli`        | The `shadcn-ui` package.                 |
+| `packages/cli`        | The `spaceflight-ui` package.            |
 
 ## Development
 
@@ -79,16 +77,16 @@ You can use the `pnpm --filter=[WORKSPACE]` command to start the development pro
 
 #### Examples
 
-1. To run the `ui.shadcn.com` website:
+1. To run the `ui.spaceflight.dev` website:
 
 ```bash
 pnpm --filter=www dev
 ```
 
-2. To run the `shadcn-ui` package:
+2. To run the `spaceflight-ui` package:
 
 ```bash
-pnpm --filter=shadcn-ui dev
+pnpm --filter=spaceflight-ui dev
 ```
 
 ## Running the CLI Locally
@@ -104,25 +102,25 @@ To run the CLI locally, you can follow the workflow:
 2. Run the development script for the CLI:
 
    ```bash
-   pnpm shadcn:dev
+   pnpm spaceflight:dev
    ```
 
 3. In another terminal tab, test the CLI by running:
 
    ```bash
-   pnpm shadcn
+   pnpm spaceflight
    ```
 
    To test the CLI in a specific app, use a command like:
 
    ```bash
-   pnpm shadcn <init | add | ...> -c ~/Desktop/my-app
+   pnpm spaceflight <init | add | ...> -c ~/Desktop/my-app
    ```
 
 4. To run the tests for the CLI:
 
    ```bash
-   pnpm --filter=shadcn test
+   pnpm --filter=spaceflight test
    ```
 
 This workflow ensures that you are running the most recent version of the registry and testing the CLI properly in your local environment.
@@ -196,7 +194,7 @@ If you have a request for a new component, please open a discussion on GitHub. W
 
 ## CLI
 
-The `shadcn-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://ui.shadcn.com/docs/cli).
+The `spaceflight-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://ui.spaceflight.dev/docs/cli).
 
 Any changes to the CLI should be made in the `packages/cli` directory. If you can, it would be great if you could add tests for your changes.
 

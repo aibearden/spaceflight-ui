@@ -8,7 +8,7 @@ import {
   registryItemSchema,
   registryItemTypeSchema,
   registrySchema,
-} from "shadcn/registry"
+} from "spaceflight/registry"
 import { Project, ScriptKind } from "ts-morph"
 import { z } from "zod"
 
@@ -37,7 +37,7 @@ const project = new Project({
 })
 
 async function createTempSourceFile(filename: string) {
-  const dir = await fs.mkdtemp(path.join(tmpdir(), "shadcn-"))
+  const dir = await fs.mkdtemp(path.join(tmpdir(), "spaceflight-"))
   return path.join(dir, filename)
 }
 
@@ -377,8 +377,8 @@ async function buildStyles(registry: Registry) {
       }
 
       const payload = registryItemSchema.safeParse({
-        $schema: "https://ui.shadcn.com/schema/registry-item.json",
-        author: "shadcn (https://ui.shadcn.com)",
+        $schema: "https://ui.spaceflight.dev/schema/registry-item.json",
+        author: "spaceflight (https://ui.spaceflight.dev)",
         ...item,
         files,
       })

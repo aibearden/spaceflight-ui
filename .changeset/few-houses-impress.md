@@ -1,5 +1,5 @@
 ---
-"shadcn": minor
+"spaceflight": minor
 ---
 
 add theme vars support

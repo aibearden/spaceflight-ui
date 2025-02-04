@@ -1,5 +1,5 @@
 {
-  "name": "shadcn",
+  "name": "spaceflight",
   "version": "2.3.0",
   "description": "Add components to your apps.",
   "publishConfig": {
@@ -7,13 +7,13 @@
   },
   "license": "MIT",
   "author": {
-    "name": "shadcn",
-    "url": "https://twitter.com/shadcn"
+    "name": "spaceflight",
+    "url": "https://twitter.com/spaceflight"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shadcn/ui.git",
-    "directory": "packages/shadcn"
+    "url": "https://github.com/spaceflight/ui.git",
+    "directory": "packages/spaceflight"
   },
   "files": [
     "dist"
@@ -23,7 +23,7 @@
     "ui",
     "tailwind",
     "radix-ui",
-    "shadcn"
+    "spaceflight"
   ],
   "type": "module",
   "exports": {
@@ -43,7 +43,7 @@
     "typecheck": "tsc --noEmit",
     "clean": "rimraf dist && rimraf components",
     "start:dev": "cross-env REGISTRY_URL=http://localhost:3333/r node dist/index.js",
-    "start:prod": "cross-env REGISTRY_URL=https://ui.shadcn.com/r node dist/index.js",
+    "start:prod": "cross-env REGISTRY_URL=https://ui.spaceflight.dev/r node dist/index.js",
     "start": "node dist/index.js",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",

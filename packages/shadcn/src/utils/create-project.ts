@@ -13,7 +13,7 @@ import prompts from "prompts"
 import { z } from "zod"
 
 const MONOREPO_TEMPLATE_URL =
-  "https://codeload.github.com/shadcn-ui/ui/tar.gz/main"
+  "https://codeload.github.com/spaceflight-ui/ui/tar.gz/main"
 
 export async function createProject(
   options: Pick<
@@ -194,7 +194,7 @@ async function createMonorepoProject(
 
   try {
     // Get the template.
-    const templatePath = path.join(os.tmpdir(), `shadcn-template-${Date.now()}`)
+    const templatePath = path.join(os.tmpdir(), `spaceflight-template-${Date.now()}`)
     await fs.ensureDir(templatePath)
     const response = await fetch(MONOREPO_TEMPLATE_URL)
     if (!response.ok) {

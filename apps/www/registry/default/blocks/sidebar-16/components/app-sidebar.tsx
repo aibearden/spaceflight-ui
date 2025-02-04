@@ -30,9 +30,9 @@ import {
 
 const data = {
   user: {
-    name: "shadcn",
+    name: "spaceflight",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/avatars/spaceflight.jpg",
   },
   navMain: [
     {

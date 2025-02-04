@@ -1,5 +1,5 @@
 ---
-"shadcn": minor
+"spaceflight": minor
 ---
 
 fix handling of sidebar colors

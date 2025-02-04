@@ -5,7 +5,7 @@ description: Use the CLI to add components to your project.
 
 <Callout>
 
-**Note:** We just released a new `shadcn` CLI. See the [changelog](/docs/changelog) for more information.
+**Note:** We just released a new `spaceflight` CLI. See the [changelog](/docs/changelog) for more information.
 
 </Callout>
 
@@ -16,7 +16,7 @@ Use the `init` command to initialize configuration and dependencies for a new pr
 The `init` command installs dependencies, adds the `cn` util, configures `tailwind.config.js`, and CSS variables for the project.
 
 ```bash
-npx shadcn@latest init
+npx spaceflight@latest init
 ```
 
 You will be asked a few questions to configure `components.json`:
@@ -30,7 +30,7 @@ Do you want to use CSS variables for colors? › no / yes
 ### Options
 
 ```txt
-Usage: shadcn init [options] [components...]
+Usage: spaceflight init [options] [components...]
 
 initialize your project and install dependencies
 
@@ -50,7 +50,7 @@ Options:
 Use the `add` command to add components and dependencies to your project.
 
 ```bash
-npx shadcn@latest add [component]
+npx spaceflight@latest add [component]
 ```
 
 You will be presented with a list of components to choose from:
@@ -74,7 +74,7 @@ Enter to submit.
 ### Options
 
 ```txt
-Usage: shadcn add [options] [components...]
+Usage: spaceflight add [options] [components...]
 
 add a component to your project
 
@@ -95,15 +95,15 @@ Options:
 Use the `build` command to generate the registry JSON files.
 
 ```bash
-npx shadcn@latest build
+npx spaceflight@latest build
 ```
 
 This command reads the `registry.json` file and generates the registry JSON files in the `public/r` directory.
 
 ```txt
-Usage: shadcn build [options] [registry]
+Usage: spaceflight build [options] [registry]
 
-build components for a shadcn registry
+build components for a spaceflight registry
 
 Arguments:
   registry             path to registry.json file (default: "./registry.json")
@@ -111,12 +111,12 @@ Arguments:
 Options:
   -o, --output <path>  destination directory for json files (default: "./public/r")
   -c, --cwd <cwd>      the working directory. defaults to the current directory. (default:
-                       "/Users/shadcn/Code/shadcn/ui/packages/shadcn")
+                       "/Users/spaceflight/Code/spaceflight/ui/packages/spaceflight")
   -h, --help           display help for command
 ```
 
 To customize the output directory, use the `--output` option.
 
 ```bash
-npx shadcn@latest build --output ./public/registry
+npx spaceflight@latest build --output ./public/registry
 ```
